@@ -8,7 +8,7 @@ int main() {
  char isim[] ="ABCDe";
  
  int sonuc = len(isim);
- printf("%i",sonuc);
+ printf("%s nin uzunlugu: %i ",isim,sonuc);
 
 
   return 0;
