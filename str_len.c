@@ -5,28 +5,17 @@ int len(char *str);
 
 int main() {
 
- char isim[] ="ABCDe";
+ char isim[] ="Mehmet";
  
  int sonuc = len(isim);
- printf("%s nin uzunlugu: %i ",isim,sonuc);
-
-
+ printf("%s kelimesinin uzunlugu: %i karakterdir. ",isim,sonuc);
   return 0;
 }
 
 int len(char *str) {
 int i=-1;
- 
  do {
  	i++;
-//printf("%i",i);
-if (str[i]=='\0') {
-//puts("aha");
-//printf("%i",str[i]);
-}
-//printf("%c\n",str[i]);
-
  } while (str[i]!='\0');
- 
  return i;
 }
