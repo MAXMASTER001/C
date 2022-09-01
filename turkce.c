@@ -4,7 +4,7 @@
 
 int main(){
 
-// dosya windowsta code page olarak windows 1254 olarak kayýt edilmeli!
+// dosya windowsta code page olarak windows 1254 olarak kayžt edilmeli!
   setlocale(LC_ALL, "Turkish");
 
 

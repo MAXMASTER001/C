@@ -1,28 +1,28 @@
 #include <stdio.h>
 #include <locale.h>
-
+int uzunluk(char *str);
 int main(){
 
-// dosya windowsta code page olarak windows 1254 olarak kayÄ±t edilmeli!
+// dosya windowsta code page olarak windows 1254 olarak kayýt edilmeli!
   setlocale(LC_ALL, "Turkish");
 
-  int start = 6;
-  int length = 5;
-  char str[100]="Quick brown fox jump over";
-  char substr[100];
-  int i=0;
-  while (i<length)
-  {
-    substr[i]=str[start + i];
-    i++;
-  }
-  substr[i]='\0';
-  
-  printf("%s\n",substr);
+// char str[] = "Mehmet";
+char *str = "Mehmet Yýldýrým";
 
-
+printf("%s %i karakter uzunluðundadýr", str, uzunluk(str));
 
   return 0;
+}
+
+int uzunluk(char *str) {
+int i=-1;
+do
+{
+  i++;
+//} while (str[i]!='\0'); alltaki satýrla özdeþ
+} while (*(str + i )!='\0');
+return i;
+
 }
 
 

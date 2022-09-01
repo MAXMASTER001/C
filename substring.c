@@ -4,7 +4,7 @@
 
 int main(){
 
-// dosya windowsta code page olarak windows 1254 olarak kayÄ±t edilmeli!
+// dosya windowsta code page olarak windows 1254 olarak kayýt edilmeli!
   setlocale(LC_ALL, "Turkish");
 
   int start = 0;
@@ -25,7 +25,7 @@ substr[i]='\0'; // null terminate the char array
 
   
 
-  printf("Merhaba, DÃ¼nya!");
+  printf("Merhaba, Dünya!");
 
 
   return 0;
