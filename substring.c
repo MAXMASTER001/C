@@ -18,7 +18,7 @@ int main(){
     i++;
   }
 
-substr[i]='\0';
+substr[i]='\0'; // null terminate the char array
   printf("%s", substr);
   
 
