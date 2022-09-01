@@ -2,23 +2,17 @@
 #include<string.h>
 #include<stdlib.h>
 /*
-Why use malloc() ?
-Here are the reasons of using malloc()
-
-You should use malloc() when you have to allocate memory at runtime.
-You should use malloc when you have to allocate objects which must exist beyond the execution of the current memory block.
-Go for malloc() if you need to allocate memory greater than the size of that stack.
-It returns the pointer to the first byte of allocated space.
-It enables developers to allocate memory as it is needed in the exact amount.
-This function allocates a memory block size of bytes from the heap.
-Why use calloc() ?
-Here are the reasons of using calloc()
-
-When you have to set allocated memory to zero.
-You can use calloc that returns a pointer to get access to memory heap.
-Used when you need to initialize the elements to zero to returns a pointer to the memory.
-To prevent overflow that is possible with malloc()
-Use calloc() to request a page that is known to already be zeroed.
+The functions malloc() and calloc() are library functions that allocate memory dynamically.
+ Dynamic means the memory is allocated during runtime (execution of the program) from the 
+ heap segment.
+Initialization
+malloc() allocates a memory block of given size (in bytes) and returns a pointer to the
+ beginning of the block. malloc() doesn’t initialize the allocated memory. If you try 
+ to read from the allocated memory without first initializing it, then you will invoke 
+ undefined behavior, which will usually mean the values you read will be garbage.
+calloc() allocates the memory and also initializes every byte in the allocated memory 
+to 0. If you try to read the value of the allocated memory without initializing it, 
+you’ll get 0 as it has already been initialized to 0 by calloc().
 */
 void main()
 {
