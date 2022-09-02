@@ -24,3 +24,27 @@ char *substring(char *str, int start , int length)
    substr[i]='\0'; // null terminate the char array
    return substr;
 }
+
+char *buyukharf(char *str) {
+int len = strlen(str);
+int mi = sizeof(char) * len ;
+char *upper =  malloc(mi);
+int i = 0;
+do
+    {
+        if (str[i]!=32)
+        {
+             upper[i] = str[i] - 32;
+        } else {
+        
+             upper[i] = str[i];
+        }
+        
+            i++;
+    } while (i<len);
+    
+
+upper[i] ='\0';
+
+return upper ;
+}
